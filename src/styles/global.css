@@ -1,0 +1,38 @@
+/*
+  Estilos globais - reset mínimo + estilos de base do <body>.
+  Estilos específicos de cada componente/tela ficam em CSS Modules
+  (arquivo.module.css) ao lado do próprio componente, nunca aqui.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-base);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-principal);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Acessibilidade: mantém um contorno de foco visível para navegação
+   via teclado, em vez de remover o outline (erro comum que prejudica
+   quem não usa mouse). */
+:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
