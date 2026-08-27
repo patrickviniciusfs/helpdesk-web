@@ -1,0 +1,60 @@
+.pagina {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-6);
+  padding: var(--espaco-4) var(--espaco-6);
+  background-color: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.marca {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--cor-primaria);
+}
+
+.links {
+  display: flex;
+  gap: var(--espaco-5);
+  flex: 1;
+}
+
+.links a {
+  color: var(--cor-texto-secundario);
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+.links a:hover {
+  color: var(--cor-texto-principal);
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-4);
+}
+
+.nomeUsuario {
+  font-size: 0.88rem;
+  color: var(--cor-texto-secundario);
+}
+
+.role {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+}
+
+.conteudo {
+  flex: 1;
+  padding: var(--espaco-6);
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}

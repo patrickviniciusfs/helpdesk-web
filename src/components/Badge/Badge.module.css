@@ -1,0 +1,36 @@
+.badge {
+  display: inline-block;
+  padding: var(--espaco-1) var(--espaco-3);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Prioridade */
+.prioridade_BAIXA {
+  color: var(--cor-prioridade-baixa);
+  background-color: var(--cor-prioridade-baixa-fundo);
+}
+.prioridade_MEDIA {
+  color: var(--cor-prioridade-media);
+  background-color: var(--cor-prioridade-media-fundo);
+}
+.prioridade_ALTA {
+  color: var(--cor-prioridade-alta);
+  background-color: var(--cor-prioridade-alta-fundo);
+}
+
+/* Status */
+.status_ABERTO {
+  color: var(--cor-status-aberto);
+  background-color: var(--cor-status-aberto-fundo);
+}
+.status_EM_ANDAMENTO {
+  color: var(--cor-status-andamento);
+  background-color: var(--cor-status-andamento-fundo);
+}
+.status_RESOLVIDO {
+  color: var(--cor-status-resolvido);
+  background-color: var(--cor-status-resolvido-fundo);
+}
