@@ -1,0 +1,50 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-fundo);
+  padding: var(--espaco-4);
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra-card);
+  padding: var(--espaco-6);
+}
+
+.titulo {
+  margin: 0 0 var(--espaco-1) 0;
+  color: var(--cor-primaria);
+}
+
+.subtitulo {
+  margin: 0 0 var(--espaco-5) 0;
+  color: var(--cor-texto-secundario);
+  font-size: 0.9rem;
+}
+
+.erroGeral {
+  background-color: var(--cor-erro-fundo);
+  color: var(--cor-erro);
+  padding: var(--espaco-3);
+  border-radius: var(--raio-sm);
+  font-size: 0.85rem;
+  margin-bottom: var(--espaco-4);
+}
+
+.rodape {
+  margin-top: var(--espaco-5);
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--cor-texto-secundario);
+}
+
+.rodape a {
+  color: var(--cor-primaria);
+  font-weight: 600;
+}
