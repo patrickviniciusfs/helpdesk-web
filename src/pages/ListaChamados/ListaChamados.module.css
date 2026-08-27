@@ -1,0 +1,62 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--espaco-5);
+}
+
+.filtro {
+  max-width: 260px;
+  margin-bottom: var(--espaco-4);
+}
+
+.erro {
+  color: var(--cor-erro);
+}
+
+.vazio {
+  color: var(--cor-texto-secundario);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+.item {
+  display: block;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  padding: var(--espaco-4);
+  box-shadow: var(--sombra-card);
+  transition: border-color 0.15s ease;
+}
+
+.item:hover {
+  border-color: var(--cor-primaria);
+}
+
+.itemTopo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--espaco-2);
+}
+
+.itemTitulo {
+  font-weight: 600;
+}
+
+.badges {
+  display: flex;
+  gap: var(--espaco-2);
+}
+
+.itemRodape {
+  display: flex;
+  gap: var(--espaco-5);
+  font-size: 0.82rem;
+  color: var(--cor-texto-secundario);
+}
