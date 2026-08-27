@@ -1,0 +1,21 @@
+.pagina h1 {
+  margin-bottom: var(--espaco-5);
+}
+
+.card {
+  max-width: 560px;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra-card);
+  padding: var(--espaco-6);
+}
+
+.erroGeral {
+  background-color: var(--cor-erro-fundo);
+  color: var(--cor-erro);
+  padding: var(--espaco-3);
+  border-radius: var(--raio-sm);
+  font-size: 0.85rem;
+  margin-bottom: var(--espaco-4);
+}
