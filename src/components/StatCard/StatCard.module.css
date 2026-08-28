@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra-card);
+  padding: var(--espaco-5);
+  border-left: 4px solid var(--cor-borda);
+}
+
+.valor {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: var(--cor-texto-secundario);
+}
+
+/* Cada tom colore só a borda esquerda + o número - discreto, mas dá pra
+   identificar o card de relance sem depender só do texto do label. */
+.neutro {
+  border-left-color: var(--cor-primaria);
+}
+.neutro .valor {
+  color: var(--cor-primaria);
+}
+
+.aberto {
+  border-left-color: var(--cor-status-aberto);
+}
+.aberto .valor {
+  color: var(--cor-status-aberto);
+}
+
+.andamento {
+  border-left-color: var(--cor-status-andamento);
+}
+.andamento .valor {
+  color: var(--cor-status-andamento);
+}
+
+.resolvido {
+  border-left-color: var(--cor-status-resolvido);
+}
+.resolvido .valor {
+  color: var(--cor-status-resolvido);
+}

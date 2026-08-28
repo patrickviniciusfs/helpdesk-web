@@ -1,0 +1,25 @@
+.alerta {
+  padding: var(--espaco-3) var(--espaco-4);
+  border-radius: var(--raio-sm);
+  font-size: 0.85rem;
+  margin-bottom: var(--espaco-4);
+  border-left: 3px solid transparent;
+}
+
+.erro {
+  background-color: var(--cor-erro-fundo);
+  color: var(--cor-erro);
+  border-left-color: var(--cor-erro);
+}
+
+.sucesso {
+  background-color: var(--cor-status-resolvido-fundo);
+  color: var(--cor-status-resolvido);
+  border-left-color: var(--cor-status-resolvido);
+}
+
+.info {
+  background-color: var(--cor-primaria-fundo-suave);
+  color: var(--cor-primaria);
+  border-left-color: var(--cor-primaria);
+}

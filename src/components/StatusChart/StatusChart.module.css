@@ -1,0 +1,46 @@
+.grafico {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+}
+
+.linha {
+  display: grid;
+  grid-template-columns: 120px 1fr 32px;
+  align-items: center;
+  gap: var(--espaco-3);
+}
+
+.rotulo {
+  font-size: 0.85rem;
+  color: var(--cor-texto-secundario);
+}
+
+.trilha {
+  background-color: var(--cor-fundo);
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.barra {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.numero {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.aberto {
+  background-color: var(--cor-status-aberto);
+}
+.andamento {
+  background-color: var(--cor-status-andamento);
+}
+.resolvido {
+  background-color: var(--cor-status-resolvido);
+}

@@ -58,3 +58,30 @@
   width: 100%;
   margin: 0 auto;
 }
+
+@media (max-width: 720px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: var(--espaco-3);
+    padding: var(--espaco-3) var(--espaco-4);
+  }
+
+  .links {
+    order: 3;
+    width: 100%;
+    gap: var(--espaco-4);
+    flex: none;
+  }
+
+  .usuario {
+    margin-left: auto;
+  }
+
+  .nomeUsuario {
+    display: none;
+  }
+
+  .conteudo {
+    padding: var(--espaco-4);
+  }
+}
