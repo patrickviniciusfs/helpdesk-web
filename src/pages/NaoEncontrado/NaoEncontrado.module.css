@@ -1,0 +1,22 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--espaco-2);
+  padding: var(--espaco-4);
+}
+
+.codigo {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  line-height: 1;
+}
+
+.pagina p {
+  color: var(--cor-texto-secundario);
+  margin-bottom: var(--espaco-4);
+}
