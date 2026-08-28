@@ -6,7 +6,8 @@ import { ListaChamados } from "../pages/ListaChamados/ListaChamados";
 import { NovoChamado } from "../pages/NovoChamado/NovoChamado";
 import { DetalheChamado } from "../pages/DetalheChamado/DetalheChamado";
 import { RotaPrivada } from "./RotaPrivada";
-
+import { Layout } from "../components/Layout/Layout";
+import { NaoEncontrado } from "../pages/NaoEncontrado/NaoEncontrado";
 
 export function AppRoutes() {
   return (
@@ -15,37 +16,18 @@ export function AppRoutes() {
       <Route path="/registro" element={<Registro />} />
 
       <Route
-        path="/"
         element={
           <RotaPrivada>
-            <Dashboard />
+            <Layout />
           </RotaPrivada>
         }
-      />
-      <Route
-        path="/chamados"
-        element={
-          <RotaPrivada>
-            <ListaChamados />
-          </RotaPrivada>
-        }
-      />
-      <Route
-        path="/chamados/novo"
-        element={
-          <RotaPrivada>
-            <NovoChamado />
-          </RotaPrivada>
-        }
-      />
-      <Route
-        path="/chamados/:id"
-        element={
-          <RotaPrivada>
-            <DetalheChamado />
-          </RotaPrivada>
-        }
-      />
+      >
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/chamados" element={<ListaChamados />} />
+        <Route path="/chamados/novo" element={<NovoChamado />} />
+        <Route path="/chamados/:id" element={<DetalheChamado />} />
+      </Route>
+      <Route path="*" element={<NaoEncontrado />} />
     </Routes>
   );
 }
